@@ -1,14 +1,14 @@
 name: Hello Brijesh
 
-on:
-  push:
+on: pull_request
+ push:
     branches:
       - main
 
 jobs:
   my_job:
     name: Hello World
-    runs-on: pull_request
+    runs-on: ubuntu-latest
 
     steps:
       - name: Hello World
